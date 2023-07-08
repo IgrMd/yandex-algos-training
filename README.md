@@ -26,27 +26,27 @@
 
 ### Темы лекций
 
-0. <a href="" data-smooth-scroll="true">Разминка</a>
+0. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Тема%200.%20Разминка" data-smooth-scroll="true">Разминка</a>
 1. Стеки
-    * <a href="" data-smooth-scroll="true">Дивизион A</a>
-    * <a href="" data-smooth-scroll="true">Дивизион B</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%201.%20Стеки" data-smooth-scroll="true">Дивизион A</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%201.%20Стеки" data-smooth-scroll="true">Дивизион B</a>
 2. Очереди, деки и приоритетные очереди
-    * <a href="" data-smooth-scroll="true">Дивизион A</a>
-    * <a href="" data-smooth-scroll="true">Дивизион B</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%202.%20Очереди%2C%20деки%20и%20приоритетные%20очереди" data-smooth-scroll="true">Дивизион A</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%202.%20Очереди%2C%20деки%20и%20приоритетные%20очереди" data-smooth-scroll="true">Дивизион B</a>
 3. Динамическое программирование с одним параметром
-    * <a href="" data-smooth-scroll="true">Дивизион A</a>
-    * <a href="" data-smooth-scroll="true">Дивизион B</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%203.%20Динамическое%20программирование%20с%20одним%20параметром" data-smooth-scroll="true">Дивизион A</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%203.%20Динамическое%20программирование%20с%20одним%20параметром" data-smooth-scroll="true">Дивизион B</a>
 4. Динамическое программирование с двумя параметрами
-    * <a href="" data-smooth-scroll="true">Дивизион A</a>
-    * <a href="" data-smooth-scroll="true">Дивизион B</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами" data-smooth-scroll="true">Дивизион A</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами" data-smooth-scroll="true">Дивизион B</a>
 5. Обход графов в глубину
-    * <a href="" data-smooth-scroll="true">Дивизион A</a>
-    * <a href="" data-smooth-scroll="true">Дивизион B</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%205.%20Обход%20графов%20в%20глубину" data-smooth-scroll="true">Дивизион A</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%205.%20Обход%20графов%20в%20глубину" data-smooth-scroll="true">Дивизион B</a>
 6. Обход графов в ширину
-    * <a href="" data-smooth-scroll="true">Дивизион A</a>
-    * <a href="" data-smooth-scroll="true">Дивизион B</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%206.%20Обход%20графов%20в%20ширину" data-smooth-scroll="true">Дивизион A</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%206.%20Обход%20графов%20в%20ширину" data-smooth-scroll="true">Дивизион B</a>
 
-   <a href="" data-smooth-scroll="true">Финальный контест</a>
+   <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Финальный%20контест" data-smooth-scroll="true">Финальный контест</a>
 
 <a href="https://contest.yandex.ru/contest/45469" data-smooth-scroll="true">Домашнее задание Дивизион А</a>  
 <a href="https://contest.yandex.ru/contest/45468" data-smooth-scroll="true">Домашнее задание Дивизион B</a>  
