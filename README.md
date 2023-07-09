@@ -32,9 +32,18 @@
 
 ## <a href="https://yandex.ru/yaintern/algorithm-training_2#schedule" data-smooth-scroll="true">Тренировки по алгоритмам 2.0</a>
 
-### Дивизион А
+### <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20A" data-smooth-scroll="true">Дивизион A</a>
 
-### <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20B/Домашнее%20задание%20№%E2%80%AF1" data-smooth-scroll="true">Дивизион B</a>  
+<a href="https://contest.yandex.ru/contest/28724/enter/" data-smooth-scroll="true">Домашнее задание № 1</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 2</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 3</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 4</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 5</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 6</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 7</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 8</a>
+
+### <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20B" data-smooth-scroll="true">Дивизион B</a>
 
 <a href="https://contest.yandex.ru/contest/28730/enter/" data-smooth-scroll="true">Домашнее задание № 1</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 2</a>  
@@ -43,7 +52,7 @@
 <a href="" data-smooth-scroll="true">Домашнее задание № 5</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 6</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 7</a>  
-<a href="" data-smooth-scroll="true">Домашнее задание № 8</a>  
+<a href="" data-smooth-scroll="true">Домашнее задание № 8</a>
 
 ## <a href="https://yandex.ru/yaintern/algorithm-training" data-smooth-scroll="true">Тренировки по алгоритмам 3.0</a>
 
