@@ -4,7 +4,7 @@ def read_input():
     return n, diplomas
 
 
-def legs_needed(d: int, diplomas: list[int]):
+def time_to_find_diploma(d: int, diplomas: list[int]):
     diplomas.sort()
     ans_t = 0
     for i in range(len(diplomas) - 1):
@@ -13,7 +13,7 @@ def legs_needed(d: int, diplomas: list[int]):
 
 
 def main():
-    print(legs_needed(*read_input()))
+    print(time_to_find_diploma(*read_input()))
 
 
 if __name__ == '__main__':
