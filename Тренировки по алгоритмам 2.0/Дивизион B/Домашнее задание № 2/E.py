@@ -5,11 +5,7 @@ def read_input():
 
 
 def time_to_find_diploma(d: int, diplomas: list[int]):
-    diplomas.sort()
-    ans_t = 0
-    for i in range(len(diplomas) - 1):
-        ans_t += diplomas[i]
-    return ans_t
+    return sum(diplomas) - max(diplomas)
 
 
 def main():
