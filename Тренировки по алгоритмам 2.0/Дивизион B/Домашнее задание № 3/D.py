@@ -3,7 +3,7 @@ def read_input():
     return n
 
 
-def meet_num(n):
+def guess_num(n):
     possible_nums = {x for x in range(1, n + 1)}
     while True:
         line = input().lower()
@@ -18,7 +18,7 @@ def meet_num(n):
 
 
 def main():
-    print(*meet_num(read_input()))
+    print(*guess_num(read_input()))
 
 
 if __name__ == '__main__':
