@@ -36,7 +36,7 @@
 
 <a href="https://contest.yandex.ru/contest/28724/enter/" data-smooth-scroll="true">Домашнее задание № 1</a>  
 <a href="https://contest.yandex.ru/contest/28736/enter/" data-smooth-scroll="true">Домашнее задание № 2</a>  
-<a href="" data-smooth-scroll="true">Домашнее задание № 3</a>  
+<a href="https://contest.yandex.ru/contest/28963/enter/" data-smooth-scroll="true">Домашнее задание № 3</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 4</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 5</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 6</a>  
@@ -47,7 +47,7 @@
 
 <a href="https://contest.yandex.ru/contest/28730/enter/" data-smooth-scroll="true">Домашнее задание № 1</a>  
 <a href="https://contest.yandex.ru/contest/28738/enter/" data-smooth-scroll="true">Домашнее задание № 2</a>  
-<a href="" data-smooth-scroll="true">Домашнее задание № 3</a>  
+<a href="https://contest.yandex.ru/contest/28964/enter/" data-smooth-scroll="true">Домашнее задание № 3</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 4</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 5</a>  
 <a href="" data-smooth-scroll="true">Домашнее задание № 6</a>  
