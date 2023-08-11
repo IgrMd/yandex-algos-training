@@ -1,28 +1,15 @@
 def read_input():
-    nums = []
-    x = int(input())
-    while x != 0:
-        nums.append(x)
-        x = int(input())
-    return nums
+    nums1 = set(map(int, input().split()))
+    nums2 = set(map(int, input().split()))
+    return nums1, nums2
 
 
-def max_num_count(nums: list[int]):
-    if not len(nums):
-        return 0
-    max_num = nums[0]
-    count = 0
-    for num in nums:
-        if num == max_num:
-            count += 1
-        if num > max_num:
-            max_num = num
-            count = 1
-    return count
+def same_nums(nums1: set[int], nums2: set[int]):
+    return len(nums1.intersection(nums2))
 
 
 def main():
-    print(max_num_count(read_input()))
+    print(same_nums(*read_input()))
 
 
 if __name__ == '__main__':
