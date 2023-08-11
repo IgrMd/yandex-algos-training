@@ -6,7 +6,7 @@ def read_input():
     return nums
 
 
-def meet_num(nums: list[int]):
+def unique_elements(nums: list[int]):
     mem = defaultdict(int)
     for num in nums:
         mem[num] += 1
@@ -14,7 +14,7 @@ def meet_num(nums: list[int]):
 
 
 def main():
-    print(*meet_num(read_input()))
+    print(*unique_elements(read_input()))
 
 
 if __name__ == '__main__':
