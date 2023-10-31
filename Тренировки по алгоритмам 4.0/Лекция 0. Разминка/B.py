@@ -3,17 +3,7 @@ def read_input():
     return a, b, c, d
 
 
-def sum_rationals(l, r, seq):
-    now = seq[l]
-    for elem in seq[l:r + 1]:
-        if elem < now:
-            return now
-        if elem > now:
-            return elem
-    return None
-
-
-def min_in_range(a, b, c, d):
+def sum_rationals(a, b, c, d):
     m, n = a * d + b * c, b * d
     div = 2
     while div <= m and div <= n:
@@ -26,7 +16,7 @@ def min_in_range(a, b, c, d):
 
 
 def main():
-    print(*min_in_range(*read_input()))
+    print(*sum_rationals(*read_input()))
 
 
 if __name__ == '__main__':
