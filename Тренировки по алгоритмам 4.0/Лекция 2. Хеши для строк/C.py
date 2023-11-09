@@ -1,12 +1,9 @@
-from datetime import datetime
+X = 257
+P = 10 ** 9 + 7
 
 
 def read_input():
     return input()
-
-
-X = 257
-P = 10 ** 9 + 7
 
 
 def is_equal(slen, from1, from2, h, x):
@@ -29,7 +26,6 @@ def upper_bound(left: int, right: int, check, params):
 
 
 def string_base_len(s):
-    # start = datetime.now()
     n = len(s)
     h = [0] * (n + 1)
     x = [1] * (n + 1)
@@ -42,12 +38,10 @@ def string_base_len(s):
         if s[i] == s[0]:
             z[i] = upper_bound(1, n - i, is_equal, (0, i, h, x))
     return z
-    # return datetime.now() - start
 
 
 def main():
     print(*string_base_len(read_input()))
-    # print(string_base_len(read_input()))
 
 
 if __name__ == '__main__':

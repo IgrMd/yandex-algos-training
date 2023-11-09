@@ -1,9 +1,8 @@
-#include <algorithm>
-#include <iomanip>
+#include <cstdint>
 #include <functional>
-#include <sstream>
 #include <iostream>
-#include <chrono>
+#include <string>
+#include <vector>
 
 static constexpr uint64_t X = 257;
 static constexpr uint64_t P = 1'000'000'007;
@@ -27,7 +26,7 @@ void Print(It it, It end) {
 }
 
 template<typename Check, typename...Args>
-int UpperBound(int left, int right, Check check, const Args&...args) {
+int UpperBound(int left, int right, const Check& check, const Args&...args) {
 	while (left < right) {
 		int mid = (left + right + 1) / 2;
 		if (check(mid, args...)) {
@@ -52,9 +51,9 @@ int main() {
 		x[i] = (x[i - 1] * X) % P;
 	}
 	std::vector<int> z(n + 1, 0);
+	std::function<bool(int, int, int, const std::vector<uint64_t>&, const std::vector<uint64_t>&)> check(IsEqual);
 	for (int i = 2; i < n + 1; ++i) {
 		if (s[i] == s[1]) {
-			std::function<bool(int, int, int, const std::vector<uint64_t>&, const std::vector<uint64_t>&)> check(IsEqual);
 			z[i] = UpperBound(1, n - i + 1, check, 1, i, h, x);
 		}
 	}
