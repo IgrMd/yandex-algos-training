@@ -1,11 +1,16 @@
+import datetime
+
+
 def read_input():
     n = int(input().strip())
     return n
 
 
+BRACE_MAP = {')': '(', ']': '['}
+
+
 def is_correct_sequence(sequence, begin, end):
     stack = []
-    brace_map = {')': '(', ']': '['}
     for i in range(begin, end):
         brace = sequence[i]
         if brace == '(' or brace == '[':
@@ -13,7 +18,7 @@ def is_correct_sequence(sequence, begin, end):
             continue
         if not len(stack):
             return False
-        if stack.pop() != brace_map[brace]:
+        if stack.pop() != BRACE_MAP[brace]:
             return False
     if len(stack):
         return False
@@ -21,17 +26,27 @@ def is_correct_sequence(sequence, begin, end):
 
 
 def generate(sequence: list, n, t: int, op1, cl1, op2, cl2):
+    if (op1 + op2) == n // 2:
+        stack = []
+        for i in range(t):
+            brace = sequence[i]
+            if brace == '(' or brace == '[':
+                stack.append(brace)
+                continue
+            if not len(stack):
+                return
+            if stack.pop() != BRACE_MAP[brace]:
+                return
+        while len(stack):
+            sequence[t] = ')' if stack.pop() == '(' else ']'
+            t += 1
+        return print(*sequence, sep='')
+        # return
     if cl1 > op1 or cl2 > op2:
-        return
-    if (op1 + op2) > n // 2:
         return
     if cl1 == op1 and cl2 == op2:
         if not is_correct_sequence(sequence, 0, t):
             return
-    if t == n:
-        if is_correct_sequence(sequence, 0, t):
-            print(*sequence, sep='')
-        return
     sequence[t] = '('
     generate(sequence, n, t + 1, op1 + 1, cl1, op2, cl2)
     sequence[t] = '['
@@ -50,7 +65,9 @@ def sequences(n):
 
 
 def main():
+    # start = datetime.datetime.now()
     sequences(read_input())
+    # print(datetime.datetime.now() - start)
 
 
 if __name__ == '__main__':
