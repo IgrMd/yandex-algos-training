@@ -141,24 +141,33 @@
 ### Темы лекций
 
 0. Разминка
+    * <a href="https://www.youtube.com/watch?v=O26-2-94BDk">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Тема%200.%20Разминка">
       Решение Дивизион A, B</a>
 1. Стеки
+    * <a href="https://www.youtube.com/watch?v=ZUpImO_2hmA">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=x2lyWma-Rms">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%201.%20Стеки">
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%201.%20Стеки">
       Решение Дивизион B</a>
 2. Очереди, деки и приоритетные очереди
+    * <a href="https://www.youtube.com/watch?v=sAyOhkMZae4">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=x2lyWma-Rms">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%202.%20Очереди%2C%20деки%20и%20приоритетные%20очереди">
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%202.%20Очереди%2C%20деки%20и%20приоритетные%20очереди">
       Решение Дивизион B</a>
 3. Динамическое программирование с одним параметром
+    * <a href="https://www.youtube.com/watch?v=H7lu6h8H9-4">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=IRdz2GgnQwk">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%203.%20Динамическое%20программирование%20с%20одним%20параметром">
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%203.%20Динамическое%20программирование%20с%20одним%20параметром">
       Решение Дивизион B</a>
 4. Динамическое программирование с двумя параметрами
+    * <a href="https://www.youtube.com/watch?v=U8gzm92fprI">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=IRdz2GgnQwk">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами">
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами">
