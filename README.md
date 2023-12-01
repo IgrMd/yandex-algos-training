@@ -4,31 +4,61 @@
 
 ### Темы лекций
 
-1. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%201.%20«Сложность%2C%20тестирование%2C%20особые%20случаи»" data-smooth-scroll="true">
-   Сложность, тестирование, особые случаи</a>
-2. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%202.%20«Линейный%20поиск»" data-smooth-scroll="true">
-   Линейный поиск</a>
-3. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%203.%20«Множества»" data-smooth-scroll="true">
-   Множества</a>
-4. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%204.%20«Словари%20и%20сортировка%20подсчётом»" data-smooth-scroll="true">
-   Словари и сортировка подсчётом</a>
-5. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%205.%20«Префиксные%20суммы%20и%20два%20указателя»" data-smooth-scroll="true">
-   Префиксные суммы и два указателя</a>
-6. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%206.%20«Бинарный%20поиск»" data-smooth-scroll="true">
-   Бинарный поиск</a>
-7. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%207.%20«Сортировка%20событий»" data-smooth-scroll="true">
-   Сортировка событий</a>
-8. <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%208.%20«Деревья»" data-smooth-scroll="true">
-   Деревья</a>
+1. Сложность, тестирование, особые случаи
+    * <a href="https://www.youtube.com/watch?v=QLhqYNsPIVo">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=mdJdB7On4AM">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27393/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%201.%20«Сложность%2C%20тестирование%2C%20особые%20случаи»">
+        Решение</a>
 
-<a href="https://contest.yandex.ru/contest/27393/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 1</a>  
-<a href="https://contest.yandex.ru/contest/27472/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 2</a>  
-<a href="https://contest.yandex.ru/contest/27663/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 3</a>  
-<a href="https://contest.yandex.ru/contest/27665/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 4</a>  
-<a href="https://contest.yandex.ru/contest/27794/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 5</a>  
-<a href="https://contest.yandex.ru/contest/27844/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 6</a>  
-<a href="https://contest.yandex.ru/contest/27883/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 7</a>  
-<a href="https://contest.yandex.ru/contest/28069/enter/" data-smooth-scroll="true">Домашнее задание по лекции № 8</a>
+2. Линейный поиск
+    * <a href="https://www.youtube.com/watch?v=SKwB41FrGgU">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=mdJdB7On4AM">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27472/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%202.%20«Линейный%20поиск»">
+        Решение</a>
+
+3. Множества
+    * <a href="https://www.youtube.com/watch?v=PUpmV2ieIHA">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=J2C6rDqe8mQ">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27663/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%203.%20«Множества»">
+        Решение</a>
+
+4. Словари и сортировка подсчётом
+    * <a href="https://www.youtube.com/watch?v=Nb5mW1yWVSs">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=J2C6rDqe8mQ">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27665/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%204.%20«Словари%20и%20сортировка%20подсчётом»">
+        Решение</a>
+
+5. Префиксные суммы и два указателя
+    * <a href="https://www.youtube.com/watch?v=de28y8Dcvkg">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=fqsuy5rwZhk">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27794/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%205.%20«Префиксные%20суммы%20и%20два%20указателя»">
+        Решение</a>
+
+6. Бинарный поиск
+    * <a href="https://www.youtube.com/watch?v=YENpZexHfuk">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=fqsuy5rwZhk">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27844/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%206.%20«Бинарный%20поиск»">
+        Решение</a>
+
+7. Сортировка событий
+    * <a href="https://www.youtube.com/watch?v=hGixDBO-p6Q">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=5lfkBD4dnGM">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/27883/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%207.%20«Сортировка%20событий»">
+        Решение</a>
+
+8. Деревья
+    * <a href="https://www.youtube.com/watch?v=lEJzqHgyels">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=5lfkBD4dnGM">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/28069/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%208.%20«Деревья»">
+        Решение</a>
 
 ## <a href="https://yandex.ru/yaintern/algorithm-training_2#schedule" data-smooth-scroll="true">Тренировки по алгоритмам 2.0</a>
 
