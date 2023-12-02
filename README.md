@@ -173,11 +173,15 @@
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами">
       Решение Дивизион B</a>
 5. Обход графов в глубину
+    * <a href="https://www.youtube.com/watch?v=0YjdZlgf9Ig">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=XRSET3p7WHI">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%205.%20Обход%20графов%20в%20глубину">
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%205.%20Обход%20графов%20в%20глубину">
       Решение Дивизион B</a>
 6. Обход графов в ширину
+    * <a href="https://www.youtube.com/watch?v=5QqVZJ8bA5o">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=XRSET3p7WHI">Разбор домашнего задания</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%206.%20Обход%20графов%20в%20ширину">
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%206.%20Обход%20графов%20в%20ширину">
