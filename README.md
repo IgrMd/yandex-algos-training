@@ -133,7 +133,7 @@
         * <a href="https://contest.yandex.ru/contest/29403/enter/">Домашнее задание</a>
         * Решение
 
-## <a href="https://yandex.ru/yaintern/algorithm-training">Тренировки по алгоритмам 3.0</a>
+## <a href="https://yandex.ru/yaintern/training/algorithm-training_3">Тренировки по алгоритмам 3.0</a>
 
 <a href="https://contest.yandex.ru/contest/45469">Домашнее задание Дивизион А</a>  
 <a href="https://contest.yandex.ru/contest/45468">Домашнее задание Дивизион B</a>
@@ -186,9 +186,46 @@
       Решение Дивизион A</a>
     * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%206.%20Обход%20графов%20в%20ширину">
       Решение Дивизион B</a>
-7. Финальный контест
-    * <a href="https://contest.yandex.ru/contest/46304">Задание</a>
-    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Финальный%20контест">
-      Решение Дивизион A, B</a>
+Финальный контест
+   * <a href="https://contest.yandex.ru/contest/46304">Задание</a>
+   * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Финальный%20контест">
+         Решение Дивизион A, B</a>
+
+## <a href="https://yandex.ru/yaintern/algorithm-training">Тренировки по алгоритмам 4.0</a>
 
 
+### Темы лекций
+
+0. Разминка
+    * <a href="https://www.youtube.com/watch?v=7OM4ryaqHyU">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/53027/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%200.%20Разминка">
+      Решение</a>
+1. Сортировки: быстрая, слиянием и поразрядная
+    * <a href="https://www.youtube.com/watch?v=e3WhTm1G--o">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=x1uJkaK_j9g">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/53029/enter/">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%201.%20Сортировки%20-%20%20быстрая%2C%20слиянием%20и%20поразрядная">
+        Решение</a>
+2. Хеши для строк
+    * <a href="https://www.youtube.com/watch?v=nSgDk6P_8pI">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=-ThQ3Fnh-14">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/53030">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%202.%20Хеши%20для%20строк">
+        Решение</a>
+3. Кратчайшие пути во взвешенных графах
+    * <a href="https://www.youtube.com/watch?v=sGU4xxp9N3o">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=4-BDdlM1lV4">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/53031">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%203.%20Кратчайшие%20пути%20в%20графах">
+        Решение</a>
+4. Перебор и методы его оптимизации
+    * <a href="https://www.youtube.com/watch?v=PNzrc52lrSw">Лекция</a>
+    * <a href="https://www.youtube.com/watch?v=zTdSYTwatlg">Разбор домашнего задания</a>
+    * <a href="https://contest.yandex.ru/contest/53032">Домашнее задание</a>
+    * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%204.%20Перебор%20и%20методы%20его%20оптимизации">
+        Решение</a>
+Финальный контест
+   * <a href="https://contest.yandex.ru/contest/53033">Задание</a>
+   * <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Финальный%20контест">
+         Решение Дивизион A, B</a>
