@@ -1,0 +1,206 @@
+# Тренировки по алгоритмам от Яндекса
+
+## [Тренировки по алгоритмам 1.0](https://yandex.ru/yaintern/algorithm-training_1)
+
+### Темы лекций
+
+1. Сложность, тестирование, особые случаи
+    * [Лекция](https://www.youtube.com/watch?v=QLhqYNsPIVo)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=mdJdB7On4AM)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27393/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%201.%20«Сложность%2C%20тестирование%2C%20особые%20случаи»)
+2. Линейный поиск
+    * [Лекция](https://www.youtube.com/watch?v=SKwB41FrGgU)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=mdJdB7On4AM)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27472/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%202.%20«Линейный%20поиск»)
+3. Множества
+    * [Лекция](https://www.youtube.com/watch?v=PUpmV2ieIHA)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=J2C6rDqe8mQ)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27663/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%203.%20«Множества»)
+4. Словари и сортировка подсчётом
+    * [Лекция](https://www.youtube.com/watch?v=Nb5mW1yWVSs)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=J2C6rDqe8mQ)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27665/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%204.%20«Словари%20и%20сортировка%20подсчётом»)
+5. Префиксные суммы и два указателя
+    * [Лекция](https://www.youtube.com/watch?v=de28y8Dcvkg)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=fqsuy5rwZhk)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27794/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%205.%20«Префиксные%20суммы%20и%20два%20указателя»)
+6. Бинарный поиск
+    * [Лекция](https://www.youtube.com/watch?v=YENpZexHfuk)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=fqsuy5rwZhk)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27844/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%206.%20«Бинарный%20поиск»)
+7. Сортировка событий
+    * [Лекция](https://www.youtube.com/watch?v=hGixDBO-p6Q)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=5lfkBD4dnGM)
+    * [Домашнее задание](https://contest.yandex.ru/contest/27883/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%207.%20«Сортировка%20событий»)
+8. Деревья
+    * [Лекция](https://www.youtube.com/watch?v=lEJzqHgyels)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=5lfkBD4dnGM)
+    * [Домашнее задание](https://contest.yandex.ru/contest/28069/enter)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%208.%20«Деревья»)
+
+## [Тренировки по алгоритмам 2.0](https://yandex.ru/yaintern/algorithm-training_2#schedule)
+
+1. Домашнее задание № 1
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=SP_zryTfMIc)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28724/enter/)
+        * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20A/Домашнее%20задание%20№%E2%80%AF1)
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=WZgl1GW3lMA)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28730/enter/)
+        * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20B/Домашнее%20задание%20№%E2%80%AF1)
+2. Домашнее задание № 2
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=SP_zryTfMIc)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28736/enter/)
+        * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20A/Домашнее%20задание%20№%E2%80%AF2)
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=WZgl1GW3lMA)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28738/enter/)
+        * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20B/Домашнее%20задание%20№%E2%80%AF2)
+3. Домашнее задание № 3
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=mjdu8abcNfc)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28963/enter/)
+        * Решение
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=adZYAsm6kow)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28964/enter/)
+        * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%202.0/Дивизион%20B/Домашнее%20задание%20№%E2%80%AF3)
+4. Домашнее задание № 4
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=mjdu8abcNfc)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28969/enter/)
+        * Решение
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=adZYAsm6kow)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28970/enter/)
+        * Решение
+5. Домашнее задание № 5
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=zU12H9x9MNg)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29072/enter/)
+        * Решение
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=0ExkSKz0Y8U)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29075/enter/)
+        * Решение
+6. Домашнее задание № 6
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=zU12H9x9MNg)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29189/enter/)
+        * Решение
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=0ExkSKz0Y8U)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29188/enter/)
+        * Решение
+7. Домашнее задание № 7
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=4zPoDYvcT6U)
+        * [Домашнее задание](https://contest.yandex.ru/contest/28724/enter/)
+        * Решение
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=r5mRCMLY_L4)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29396/enter/)
+        * Решение
+8. Домашнее задание № 8
+    * Дивизион A
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=4zPoDYvcT6U)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29405/enter/)
+        * Решение
+    * Дивизион B
+        * [Разбор домашнего задания](https://www.youtube.com/watch?v=r5mRCMLY_L4)
+        * [Домашнее задание](https://contest.yandex.ru/contest/29403/enter/)
+        * Решение
+
+## [Тренировки по алгоритмам 3.0](https://yandex.ru/yaintern/training/algorithm-training_3)
+
+[Домашнее задание Дивизион А](https://contest.yandex.ru/contest/45469)  
+[Домашнее задание Дивизион B](https://contest.yandex.ru/contest/45468)
+
+### Разминка
+
+* [Разбор домашнего задания](https://www.youtube.com/watch?v=O26-2-94BDk)
+* <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Тема%200.%20Разминка">
+  Решение Дивизион A, B</a>
+
+### Темы лекций
+
+1. Стеки
+    * [Лекция](https://www.youtube.com/watch?v=ZUpImO_2hmA)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=x2lyWma-Rms)
+    * [Решение Дивизион A](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%201.%20Стеки)
+    * [Решение Дивизион B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%201.%20Стеки)
+2. Очереди, деки и приоритетные очереди
+    * [Лекция](https://www.youtube.com/watch?v=sAyOhkMZae4)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=x2lyWma-Rms)
+    * [Решение Дивизион A](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%202.%20Очереди%2C%20деки%20и%20приоритетные%20очереди)
+    * [Решение Дивизион B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%202.%20Очереди%2C%20деки%20и%20приоритетные%20очереди)
+3. Динамическое программирование с одним параметром
+    * [Лекция](https://www.youtube.com/watch?v=H7lu6h8H9-4)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=IRdz2GgnQwk)
+    * [Решение Дивизион A](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%203.%20Динамическое%20программирование%20с%20одним%20параметром)
+    * [Решение Дивизион B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%203.%20Динамическое%20программирование%20с%20одним%20параметром)
+4. Динамическое программирование с двумя параметрами
+    * [Лекция](https://www.youtube.com/watch?v=U8gzm92fprI)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=IRdz2GgnQwk)
+    * [Решение Дивизион A](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами)
+    * [Решение Дивизион B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%204.%20Динамическое%20программирование%20с%20двумя%20параметрами)
+5. Обход графов в глубину
+    * [Лекция](https://www.youtube.com/watch?v=0YjdZlgf9Ig)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=XRSET3p7WHI)
+    * [Решение Дивизион A](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%205.%20Обход%20графов%20в%20глубину)
+    * [Решение Дивизион B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%205.%20Обход%20графов%20в%20глубину)
+6. Обход графов в ширину
+    * [Лекция](https://www.youtube.com/watch?v=5QqVZJ8bA5o)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=XRSET3p7WHI)
+    * [Решение Дивизион A](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20A/Тема%206.%20Обход%20графов%20в%20ширину)
+    * [Решение Дивизион B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Дивизион%20B/Тема%206.%20Обход%20графов%20в%20ширину)
+
+### Финальный контест
+
+* [Задание](https://contest.yandex.ru/contest/46304)
+* [Решение Дивизион A, B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Финальный%20контест)
+
+## [Тренировки по алгоритмам 4.0](https://yandex.ru/yaintern/algorithm-training)
+
+### Разминка
+
+* [Разбор домашнего задания](https://www.youtube.com/watch?v=7OM4ryaqHyU)
+* [Домашнее задание](https://contest.yandex.ru/contest/53027/enter/)
+* [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%200.%20Разминка)
+
+### Темы лекций
+
+1. Сортировки: быстрая, слиянием и поразрядная
+    * [Лекция](https://www.youtube.com/watch?v=e3WhTm1G--o)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=x1uJkaK_j9g)
+    * [Домашнее задание](https://contest.yandex.ru/contest/53029/enter/)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%201.%20Сортировки%20-%20%20быстрая%2C%20слиянием%20и%20поразрядная)
+2. Хеши для строк
+    * [Лекция](https://www.youtube.com/watch?v=nSgDk6P_8pI)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=-ThQ3Fnh-14)
+    * [Домашнее задание](https://contest.yandex.ru/contest/53030)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%202.%20Хеши%20для%20строк)
+3. Кратчайшие пути во взвешенных графах
+    * [Лекция](https://www.youtube.com/watch?v=sGU4xxp9N3o)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=4-BDdlM1lV4)
+    * [Домашнее задание](https://contest.yandex.ru/contest/53031)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%203.%20Кратчайшие%20пути%20в%20графах)
+4. Перебор и методы его оптимизации
+    * [Лекция](https://www.youtube.com/watch?v=PNzrc52lrSw)
+    * [Разбор домашнего задания](https://www.youtube.com/watch?v=zTdSYTwatlg)
+    * [Домашнее задание](https://contest.yandex.ru/contest/53032)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Лекция%204.%20Перебор%20и%20методы%20его%20оптимизации)
+
+### Финальный контест
+
+* [Задание](https://contest.yandex.ru/contest/53033)
+* [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Финальный%20спринт%20—%20контест)
