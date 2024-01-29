@@ -128,8 +128,7 @@
 ### Разминка
 
 * [Разбор домашнего задания](https://www.youtube.com/watch?v=O26-2-94BDk)
-* <a href="https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Тема%200.%20Разминка">
-  Решение Дивизион A, B</a>
+* [Решение Дивизион A, B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Тема%200.%20Разминка)
 
 ### Темы лекций
 
