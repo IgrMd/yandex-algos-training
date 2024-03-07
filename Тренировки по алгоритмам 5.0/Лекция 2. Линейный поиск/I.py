@@ -27,8 +27,6 @@ def moves_to_column(n, ships: list[list], target):
 
 
 def move_ships(n, ships: list[list]):
-    if n == 5 and ships == [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4)]:
-        return 6
     if n < 1:
         return 0
     ships.sort()
