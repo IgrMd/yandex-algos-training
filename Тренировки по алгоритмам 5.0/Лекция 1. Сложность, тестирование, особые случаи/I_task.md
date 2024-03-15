@@ -91,8 +91,8 @@ _day_ и _month_ ровно один пробел), обозначающих, ч
 примере является Tuesday Wednesday.
 
 Соответствие названий месяцев и дней недели в английском и русском языках:
-![statement-image.png](..%2F.res%2Fstatement-image.png)
+![statement-image.png](.res%2Fstatement-image.png)
 Соответствие названий месяцев и количества дней в них:
-![statement-image (1).png](..%2F.res%2Fstatement-image%20%281%29.png)
+![statement-image (1).png](.res%2Fstatement-image%20%281%29.png)
 В феврале 29 дней только в високосные года. Год является високосным, если он кратен 400, либо кратен 4 и не кратен 100.
 Например, 1996 и 2000 являются високосными, а 1999 и 1900 — нет.
