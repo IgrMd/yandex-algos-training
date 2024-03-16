@@ -28,9 +28,7 @@
 
 ### Вывод
 
-    a b
-
-abdafb basrt casds dsasa a
+    a b casds dsasa a
 
 ## Пример 2
 
