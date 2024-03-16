@@ -127,7 +127,6 @@ def test():
 def main():
     test()
     print(*p2p(*read_input()), sep=' ')
-    # print(*p2p(4, 4), sep=' ')
 
 
 if __name__ == '__main__':
