@@ -64,7 +64,7 @@ class Device:
         self.downloaded_parts_count += 1
         self.other_id_to_worth[device_id] += 1
 
-    def handle_quests(self):
+    def handle_requests(self):
         if not len(self.requests):
             return
         best_request = self.requests[0]
@@ -98,7 +98,7 @@ class Network:
 
     def handle_requests(self):
         for device in self.devices:
-            device.handle_quests()
+            device.handle_requests()
 
 
 def p2p(n: int, k: int):
