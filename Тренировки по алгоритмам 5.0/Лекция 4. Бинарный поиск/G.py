@@ -1,18 +1,12 @@
 def read_input():
     n, m = map(int, input().split())
-    field = [list(input().strip()) for _ in range(n)]
+    field = [input().strip() for _ in range(n)]
     return n, m, field
 
 
 def sub_sum(p1, p2, pref_sums):
     i1, j1 = p1
     i2, j2 = p2
-    # sum1 = pref_sums[i2][j2]
-    # sum2 = pref_sums[i2][j1 - 1]
-    # sum3 = pref_sums[i1 - 1][j2]
-    # sum4 = pref_sums[i1 - 1][j1 - 1]
-    # s_sum = sum1 - sum2 - sum3 + sum4
-    # return s_sum
     return pref_sums[i2][j2] - pref_sums[i2][j1 - 1] - pref_sums[i1 - 1][j2] + pref_sums[i1 - 1][j1 - 1]
 
 
