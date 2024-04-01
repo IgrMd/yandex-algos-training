@@ -208,22 +208,22 @@
 
 ### Темы лекций
 
-1. Лекция 1: Сложность, тестирование, особые случаи
+1. Сложность, тестирование, особые случаи
     * [Лекция](https://www.youtube.com/watch?v=SVkJ77_Fl1o)
     * [Разбор домашнего задания](https://www.youtube.com/watch?v=IesJVRj-Q40)
     * [Домашнее задание](https://contest.yandex.ru/contest/59539/)
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%205.0/Лекция%201.%20Сложность%2C%20тестирование%2C%20особые%20случаи)
-2. Лекция 2: Линейный поиск
+2. Линейный поиск
     * [Лекция](https://www.youtube.com/watch?v=7P4yu7rQADI)
     * [Разбор домашнего задания](https://www.youtube.com/watch?v=PyLX9vzrwqY)
     * [Домашнее задание](https://contest.yandex.ru/contest/59540/)
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%205.0/Лекция%202.%20Линейный%20поиск)
-3. Лекция 3: Множества и словари
+3. Множества и словари
     * [Лекция](https://www.youtube.com/watch?v=jQOnYzW8ZOE)
     * [Разбор домашнего задания](https://www.youtube.com/watch?v=GQdvaoPxbZE)
     * [Домашнее задание](https://contest.yandex.ru/contest/59541)
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%205.0/Лекция%203.%20Множества%20и%20словари)
-4. Лекция 4: Бинарный поиск
+4. Бинарный поиск
     * [Лекция](https://www.youtube.com/watch?v=-B6xvDeGyPg)
     * [Разбор домашнего задания](https://www.youtube.com/watch?v=H2qC2rFES-s)
     * [Домашнее задание](https://contest.yandex.ru/contest/59542)
