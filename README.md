@@ -1,4 +1,4 @@
-# Тренировки по алгоритмам от Яндекса
+# [Тренировки по алгоритмам от Яндекса](https://yandex.ru/yaintern/training)
 
 ## [Тренировки по алгоритмам 1.0](https://yandex.ru/yaintern/algorithm-training_1)
 
@@ -204,7 +204,7 @@
 * [Задание](https://contest.yandex.ru/contest/53033)
 * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Финальный%20спринт%20—%20контест)
 
-## [Тренировки по алгоритмам 5.0](https://yandex.ru/yaintern/algorithm-training)
+## [Тренировки по алгоритмам 5.0](https://yandex.ru/yaintern/training/algorithm-training_5)
 
 ### Темы лекций
 
