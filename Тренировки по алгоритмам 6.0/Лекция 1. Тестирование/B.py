@@ -3,7 +3,7 @@ def read_input():
     return a, b, c, d
 
 
-def wardrobe(a, b, c, d):
+def wardrobe(a: int, b: int, c: int, d: int) -> tuple[int, int]:
     if a == 0:
         return 1, c + 1 if c != 0 else 1
     if b == 0:
@@ -12,15 +12,8 @@ def wardrobe(a, b, c, d):
         return a + 1 if a != 0 else 1, 1
     if d == 0:
         return b + 1 if b != 0 else 1, 1
-
-    variants = []
-    variants.append((1, max(c, d) + 1))
-    variants.append((max(a, b) + 1, 1))
-    variants.append((a + 1, c + 1))
-    variants.append((b + 1, d + 1))
-
-    res = min(variants, key=lambda x: sum(x))
-    return res
+    variants = [(1, max(c, d) + 1), (max(a, b) + 1, 1), (a + 1, c + 1), (b + 1, d + 1)]
+    return min(variants, key=lambda x: sum(x))
 
 
 assert (wardrobe(15, 0, 555, 0) == (1, 1))
@@ -30,13 +23,9 @@ assert (wardrobe(6, 2, 7, 3) == (3, 4))
 assert (wardrobe(0, 1, 0, 1) == (1, 1))
 assert (wardrobe(1, 0, 1, 0) == (1, 1))
 assert (wardrobe(1, 0, 1, 1) == (1, 2))
-
 assert (wardrobe(0, 2, 5, 1) == (1, 6))
-
-
 assert (wardrobe(1, 1, 66, 1) == (2, 1))
 assert (wardrobe(42, 2, 1, 1) == (1, 2))
-
 assert (wardrobe(1, 1, 1, 1) == (2, 1) or wardrobe(1, 1, 1, 1) == (1, 2))
 
 
