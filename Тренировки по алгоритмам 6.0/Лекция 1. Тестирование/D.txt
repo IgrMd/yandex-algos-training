@@ -1,0 +1,21 @@
+20
+10 20 heat
+20 10 heat
+10 10 heat
+20 25 freeze
+25 20 freeze
+20 20 freeze
+20 20 fan
+20 10 fan
+20 30 fan
+20 20 auto
+20 10 auto
+20 30 auto
+-50 50 heat
+50 -50 heat
+-50 50 freeze
+50 -50 freeze
+-50 50 fan
+50 -50 fan
+-50 50 auto
+50 -50 auto
