@@ -1,6 +1,3 @@
-from collections import deque
-
-
 def input_read():
     n, k = map(int, input().split())
     nums = [int(x) for x in input().split()]
