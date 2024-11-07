@@ -31,9 +31,9 @@ def heap_pop(heap):
     if not len(heap):
         return
     if len(heap) == 1:
-        return heap.pop_front()
+        return heap.pop()
     item = heap[0]
-    heap[0] = heap.pop_front()
+    heap[0] = heap.pop()
     pos = 0
     sift_down(pos, heap)
     return item
