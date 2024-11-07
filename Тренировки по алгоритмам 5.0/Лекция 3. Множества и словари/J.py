@@ -29,19 +29,19 @@ class Request:
 class Device:
     def __init__(self, id_, network, value=False):
         self.id = id_
-        self.is_part_downloaded = [value] * network.k
-        self.downloaded_parts_count = network.k if value else 0
-        self.other_id_to_worth = [0] * network.n
+        self.is_part_downloaded = [value] * network.capacity
+        self.downloaded_parts_count = network.capacity if value else 0
+        self.other_id_to_worth = [0] * network.size
         self.network = network
         self.requests = []
         self.time = 0
 
     def send_request(self):
-        if self.downloaded_parts_count == self.network.k:
+        if self.downloaded_parts_count == self.network.capacity:
             return
         part_id = self.is_part_downloaded.index(False)
         part_count = self.network.parts_count[part_id]
-        for part in range(part_id + 1, self.network.k):
+        for part in range(part_id + 1, self.network.capacity):
             if self.is_part_downloaded[part]:
                 continue
             if self.network.parts_count[part] < part_count:

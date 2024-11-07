@@ -21,8 +21,8 @@ def pop_from_graph(now, answer, graph, r_graph, vertex_heap):
         graph[v].remove(now)
         if not len(graph[v]):
             heappush(vertex_heap, -v)
-    graph.pop(now)
-    r_graph.pop(now)
+    graph.pop_front(now)
+    r_graph.pop_front(now)
     answer.append(now)
 
 
