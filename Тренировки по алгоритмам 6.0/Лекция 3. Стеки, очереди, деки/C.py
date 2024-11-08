@@ -32,7 +32,7 @@ class Queue:
             raise RuntimeError("Empty")
         self.r = self.r - 1 if self.r else self.capacity - 1
         self.size -= 1
-        return self.buf[(self.r + 1) % self.capacity]
+        return self.buf[self.r]
 
     def pop_front(self) -> int:
         if not self.size:
