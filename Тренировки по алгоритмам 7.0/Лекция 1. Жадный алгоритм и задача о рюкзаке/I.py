@@ -20,9 +20,7 @@ def read_input():
 
 def elastic_rover(n: int, s: int, items: list[Item], max_v: int):
     dp: list[list] = [[None] * (max_v + 1) for _ in range(n + 1)]
-    item = items[0]
     dp[0][0] = (0, 10 ** 9, 0)
-    # dp[0][item.v] = (item.c, item.p, 0)
     for item_i in range(1, n + 1):
         dp[item_i] = dp[item_i - 1].copy()
         row = dp[item_i]
@@ -60,7 +58,6 @@ def elastic_rover(n: int, s: int, items: list[Item], max_v: int):
     while item_i > 0:
         ans.append(item_i)
         mem_col -= items[item_i].v
-        buf = dp[item_i - 1][mem_col]
         _, _, item_i = dp[item_i - 1][mem_col]
 
     print(len(ans), max_cost)
