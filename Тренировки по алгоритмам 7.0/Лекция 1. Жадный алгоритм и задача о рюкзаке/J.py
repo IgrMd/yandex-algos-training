@@ -19,11 +19,12 @@ def read_input():
 def asceticism(n: int, d: int, items: list[Item], ):
     items.sort(key=lambda x: x.m)
     max_mi = items[-1].m
-    dp: list[list] = [[None] * (max_mi + 1) for _ in range(n)]
+    dp: list[list] = []
+    dp.append([None] * (max_mi + 1))
     dp[0][0] = 0
     for i in range(n):
         if i > 0:
-            dp[i] = dp[i - 1].copy()
+            dp.append(dp[-1].copy())
         item = items[i]
         row = dp[i]
         if item.m <= d:
