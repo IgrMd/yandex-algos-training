@@ -1,13 +1,6 @@
 from dataclasses import dataclass
 
 
-@dataclass
-class Item:
-    v: int
-    c: int
-    p: int
-
-
 def read_input():
     n, s = map(int, input().split())
     items = [Item(0, 0, 0)]
@@ -18,11 +11,18 @@ def read_input():
     return n, s, items, max_v
 
 
+@dataclass
+class Item:
+    v: int
+    c: int
+    p: int
+
+
 def elastic_rover(n: int, s: int, items: list[Item], max_v: int):
-    dp: list[list] = [[None] * (max_v + 1) for _ in range(n + 1)]
+    dp: list[list] = [[None] * (max_v + 1)]
     dp[0][0] = (0, 10 ** 9, 0)
     for item_i in range(1, n + 1):
-        dp[item_i] = dp[item_i - 1].copy()
+        dp.append(dp[-1].copy())
         row = dp[item_i]
         item = items[item_i]
         for v_i in range(max_v - item.v, -1, -1):

@@ -21,8 +21,7 @@ def internet(m: int, a: list[int]):
             i += 1
         if i == 0:
             return 1
-        mem = min(2 ** i, 2 ** (i - 1) + min_cost(x - dp[i - 1]))
-        return mem
+        return min(2 ** i, 2 ** (i - 1) + min_cost(x - dp[i - 1]))
 
     return min_cost(m)
 
