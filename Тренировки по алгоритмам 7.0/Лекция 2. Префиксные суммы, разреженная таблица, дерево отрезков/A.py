@@ -3,8 +3,8 @@ from dataclasses import dataclass
 
 def read_input():
     n = int(input().strip())
-    table = SegmentTree(list(map(int, input().split())))
-    return table
+    tree = SegmentTree(list(map(int, input().split())))
+    return tree
 
 
 @dataclass
@@ -80,12 +80,12 @@ class SegmentTree:
 
 
 def main():
-    table = read_input()
+    tree = read_input()
     for _ in range(int(input().strip())):
         request = Range(*map(int, input().split()))
         request.l -= 1
         request.r -= 1
-        print(*table.handle_request(request))
+        print(*tree.handle_request(request))
 
 
 if __name__ == '__main__':
