@@ -38,10 +38,9 @@ class Item:
 
 class SegmentTree:
     def __init__(self, arr: list[int]):
-        k = 0
-        while 2 ** k < len(arr):
-            k += 1
-        pow_of_2: int = 2 ** k
+        pow_of_2 = 1
+        while pow_of_2 < len(arr):
+            pow_of_2 *= 2
         self.n = 2 * pow_of_2 - 1
         self.displacement = pow_of_2 - 1
         self.arr: list[Item | None] = [None] * self.n
