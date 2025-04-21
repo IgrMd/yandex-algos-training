@@ -8,7 +8,7 @@ def read_input():
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
@@ -17,7 +17,7 @@ class Range:
 class Item:
     max: int | float
     count: int
-    rng: Range
+    seg: Segment
 
 
 INF = float('inf')
@@ -39,31 +39,31 @@ class SegmentTree:
         for i in range(self.n - 1, -1, -1):
             initial_i = i - self.displacement
             if initial_i >= len(arr):
-                self.arr[i] = Item(-INF, 0, Range(initial_i, initial_i))
+                self.arr[i] = Item(-INF, 0, Segment(initial_i, initial_i))
             elif initial_i >= 0:
-                self.arr[i] = Item(arr[initial_i], 1, Range(initial_i, initial_i))
+                self.arr[i] = Item(arr[initial_i], 1, Segment(initial_i, initial_i))
             else:
                 l_child_i, r_child_i = self._get_children_(i)
                 l_child, r_child = self.arr[l_child_i], self.arr[r_child_i]
                 cur_max = max(l_child.max, r_child.max)
-                rng = Range(l_child.rng.l, r_child.rng.r)
+                seg = Segment(l_child.seg.l, r_child.seg.r)
                 cur_count = 0
                 for child in (l_child, r_child):
                     if child.max == cur_max:
                         cur_count += child.count
-                self.arr[i] = Item(cur_max, cur_count, rng)
+                self.arr[i] = Item(cur_max, cur_count, seg)
 
     @staticmethod
     def _get_children_(i: int):
         return 2 * i + 1, 2 * i + 2
 
-    def _handle_request_impl_(self, i: int, request: Range):
+    def _handle_request_impl_(self, i: int, request: Segment):
         if i >= self.n:
             return -INF, 0
         me = self.arr[i]
-        if request.r < me.rng.l or request.l > me.rng.r:
+        if request.r < me.seg.l or request.l > me.seg.r:
             return -INF, 0
-        if request.l <= me.rng.l and me.rng.r <= request.r:
+        if request.l <= me.seg.l and me.seg.r <= request.r:
             return me.max, me.count
         l_child_i, r_child_i = self._get_children_(i)
         l_ans = self._handle_request_impl_(l_child_i, request)
@@ -75,14 +75,14 @@ class SegmentTree:
                 cur_count += ans[1]
         return cur_max, cur_count
 
-    def handle_request(self, rng: Range):
-        return self._handle_request_impl_(0, rng)
+    def handle_request(self, seg: Segment):
+        return self._handle_request_impl_(0, seg)
 
 
 def main():
     tree = read_input()
     for _ in range(int(input().strip())):
-        request = Range(*map(int, input().split()))
+        request = Segment(*map(int, input().split()))
         request.l -= 1
         request.r -= 1
         print(*tree.handle_request(request))

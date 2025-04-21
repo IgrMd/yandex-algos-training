@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
@@ -18,11 +18,11 @@ INF = float('inf')
 
 @dataclass
 class Item:
-    rng: Range
+    seg: Segment
     val: int | float = field(default=INF)
 
     def __repr__(self):
-        return f'{self.rng}, v={self.val}'
+        return f'{self.seg}, v={self.val}'
 
 
 class SegmentTree:
@@ -40,29 +40,29 @@ class SegmentTree:
         for i in range(self.n - 1, -1, -1):
             initial_i = i - self.displacement
             if initial_i >= 0:
-                self.arr[i] = Item(Range(initial_i, initial_i))
+                self.arr[i] = Item(Segment(initial_i, initial_i))
                 if initial_i < len(arr):
                     self.arr[i].val = arr[initial_i]
             else:
                 l_i, r_i = self._get_children_(i)
-                self.arr[i] = Item(Range(self.arr[l_i].rng.l, self.arr[r_i].rng.r))
+                self.arr[i] = Item(Segment(self.arr[l_i].seg.l, self.arr[r_i].seg.r))
                 self.arr[i].val = 0
 
-    def update_range(self, rng: Range, add: int):
-        self._update_range_(0, rng, add)
+    def update_range(self, seg: Segment, add: int):
+        self._update_range_(0, seg, add)
 
-    def _update_range_(self, i: int, rng: Range, add: int):
+    def _update_range_(self, i: int, seg: Segment, add: int):
         if i >= self.n:
             return
         me = self.arr[i]
-        if rng.r < me.rng.l or rng.l > me.rng.r:  # ranges not crossed
+        if seg.r < me.seg.l or seg.l > me.seg.r:  # segments not crossed
             return
-        if rng.l <= me.rng.l and me.rng.r <= rng.r:  # me in request range
+        if seg.l <= me.seg.l and me.seg.r <= seg.r:  # me in request range
             me.val += add
             return
         l_i, r_i = self._get_children_(i)
-        self._update_range_(l_i, rng, add)
-        self._update_range_(r_i, rng, add)
+        self._update_range_(l_i, seg, add)
+        self._update_range_(r_i, seg, add)
 
     @staticmethod
     def _get_children_(i: int):
@@ -83,9 +83,9 @@ class SegmentTree:
         l_c.val += me.val
         r_c.val += me.val
         me.val = 0
-        if g <= l_c.rng.r:
+        if g <= l_c.seg.r:
             return self._query_impl_(l_i, g)
-        if g >= r_c.rng.l:
+        if g >= r_c.seg.l:
             return self._query_impl_(r_i, g)
 
     def query(self, g: int):
@@ -102,7 +102,7 @@ def main():
         if cmd[0] == 'g':
             print(tree.query(int(cmd[1]) - 1))
         else:
-            tree.update_range(Range(int(cmd[1]) - 1, int(cmd[2]) - 1), int(cmd[3]))
+            tree.update_range(Segment(int(cmd[1]) - 1, int(cmd[2]) - 1), int(cmd[3]))
 
 
 if __name__ == '__main__':

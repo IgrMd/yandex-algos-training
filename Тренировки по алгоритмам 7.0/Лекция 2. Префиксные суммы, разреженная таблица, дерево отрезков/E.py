@@ -8,7 +8,7 @@ def read_input():
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
@@ -17,7 +17,7 @@ class Range:
 class Item:
     min: int | float
     count: int
-    rng: Range
+    seg: Segment
 
 
 INF = float('inf')
@@ -38,19 +38,19 @@ class SegmentTree:
         for i in range(self.n - 1, -1, -1):
             initial_i = i - self.displacement
             if initial_i >= len(arr):
-                self.arr[i] = Item(INF, 0, Range(initial_i, initial_i))
+                self.arr[i] = Item(INF, 0, Segment(initial_i, initial_i))
             elif initial_i >= 0:
-                self.arr[i] = Item(arr[initial_i], 1, Range(initial_i, initial_i))
+                self.arr[i] = Item(arr[initial_i], 1, Segment(initial_i, initial_i))
             else:
                 l_child_i, r_child_i = self._get_children_(i)
                 l_child, r_child = self.arr[l_child_i], self.arr[r_child_i]
                 cur_min = min(l_child.min, r_child.min)
-                rng = Range(l_child.rng.l, r_child.rng.r)
+                seg = Segment(l_child.seg.l, r_child.seg.r)
                 cur_count = 0
                 for child in (l_child, r_child):
                     if child.min == cur_min:
                         cur_count += child.count
-                self.arr[i] = Item(cur_min, cur_count, rng)
+                self.arr[i] = Item(cur_min, cur_count, seg)
 
     @staticmethod
     def _get_children_(i: int):
@@ -60,13 +60,13 @@ class SegmentTree:
     def _get_parent_(i: int):
         return (i - 1) // 2 if i != 0 else -1
 
-    def _find_min_count_impl_(self, i: int, request: Range):
+    def _find_min_count_impl_(self, i: int, request: Segment):
         if i >= self.n:
             return INF, 0
         me = self.arr[i]
-        if request.r < me.rng.l or request.l > me.rng.r:  # ranges not crossed
+        if request.r < me.seg.l or request.l > me.seg.r:  # segments not crossed
             return INF, 0
-        if request.l <= me.rng.l and me.rng.r <= request.r:  # me in request range
+        if request.l <= me.seg.l and me.seg.r <= request.r:  # me in request range
             return me.min, me.count
         l_i, r_i = self._get_children_(i)
         l_ans = self._find_min_count_impl_(l_i, request)
@@ -78,12 +78,12 @@ class SegmentTree:
                 cur_count += ans[1]
         return cur_min, cur_count
 
-    def find_min_count(self, rng: Range):
-        return self._find_min_count_impl_(0, rng)
+    def find_min_count(self, seg: Segment):
+        return self._find_min_count_impl_(0, seg)
 
     def _find_k_zero_on_prefix_(self, i: int, k: int):
         me = self.arr[i]
-        if me.rng.l == me.rng.r:
+        if me.seg.l == me.seg.r:
             return i - self.displacement
         l_i, r_i = self._get_children_(i)
         if self.arr[l_i].min != 0:
@@ -100,16 +100,16 @@ class SegmentTree:
             return -1
         return self._find_k_zero_on_prefix_(0, k)
 
-    def find_k_zero_on_range(self, k: int, rng: Range):
+    def find_k_zero_on_range(self, k: int, seg: Segment):
         if self.arr[0].min != 0:
             return -1
         min_on_pref, count_on_pref = 0, 0
-        if rng.l > 0:
-            min_on_pref, count_on_pref = self.find_min_count(Range(0, rng.l - 1))
+        if seg.l > 0:
+            min_on_pref, count_on_pref = self.find_min_count(Segment(0, seg.l - 1))
         if min_on_pref != 0:
             count_on_pref = 0
         pos = self.find_k_zero_on_prefix(k + count_on_pref)
-        if pos > rng.r:
+        if pos > seg.r:
             return -1
         return pos
 
@@ -139,8 +139,8 @@ def main():
             tree.update_item(i, val)
         elif cmd[0] == 's':
             l, r, k = map(lambda x: int(x) - 1, cmd[1:])
-            rng = Range(l, r)
-            pos = tree.find_k_zero_on_range(k, rng)
+            seg = Segment(l, r)
+            pos = tree.find_k_zero_on_range(k, seg)
             if pos != -1:
                 pos += 1
             ans.append(pos)

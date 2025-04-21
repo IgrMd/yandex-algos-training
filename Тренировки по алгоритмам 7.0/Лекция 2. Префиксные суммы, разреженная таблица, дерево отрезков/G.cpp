@@ -21,7 +21,7 @@
 using namespace std;
 namespace rng = ranges;
 
-struct Range {
+struct Segment {
 	int l{}, r{};
 	int len() const {
 		return r - l + 1;
@@ -29,7 +29,7 @@ struct Range {
 };
 
 struct Item {
-	Range rng{};
+	Segment seg{};
 	int val{};
 	int prf{};
 	int suf{};
@@ -50,15 +50,15 @@ public:
 		for (int i = n - 1; i >= 0; --i) {
 			int initial_i = i - displacement;
 			if (initial_i >= ssize(arr)) {
-				this->arr[i].rng = { initial_i, initial_i };
+				this->arr[i].seg = { initial_i, initial_i };
 			} else if (initial_i >= 0) {
-				this->arr[i].rng = { initial_i, initial_i };
+				this->arr[i].seg = { initial_i, initial_i };
 				if (arr[initial_i] == 0) {
 					this->arr[i].val = this->arr[i].prf = this->arr[i].suf = 1;
 				}
 			} else {
 				auto [l_i, r_i] = get_children(i);
-				this->arr[i].rng = { this->arr[l_i].rng.l, this->arr[r_i].rng.r };
+				this->arr[i].seg = { this->arr[l_i].seg.l, this->arr[r_i].seg.r };
 				update_item(i);
 			}
 		}
@@ -74,8 +74,8 @@ public:
 		}
 	}
 
-	int query(Range rng) {
-		return query_impl(0, rng).val;
+	int query(Segment seg) {
+		return query_impl(0, seg).val;
 	}
 
 private:
@@ -85,16 +85,16 @@ private:
 		int prf{};
 		int suf{};
 	};
-	Ans query_impl(int i, Range rng){
+	Ans query_impl(int i, Segment seg){
 		Ans ans;
 		if (i >= n) {
 			return ans;
 		}
 		auto& me = arr[i];
-		if (rng.r < me.rng.l || rng.l > me.rng.r) {
+		if (seg.r < me.seg.l || seg.l > me.seg.r) {
 			return ans;
 		}
-		if (rng.l <= me.rng.l && me.rng.r <= rng.r){
+		if (seg.l <= me.seg.l && me.seg.r <= seg.r){
 			ans.val = me.val;
 			ans.prf = me.prf;
 			ans.suf = me.suf;
@@ -103,12 +103,12 @@ private:
 		auto [l_i, r_i] = get_children(i);
 		auto& l_c = arr[l_i];
 		auto& r_c = arr[r_i];
-		auto l = query_impl(l_i, rng);
-		auto r = query_impl(r_i, rng);
+		auto l = query_impl(l_i, seg);
+		auto r = query_impl(r_i, seg);
 
 		ans.val = std::max(l.val, r.val);
-		ans.prf = l_c.rng.len() == l.val ? l.val + r.prf : l.prf;
-		ans.suf = r_c.rng.len() == r.val ? r.val + l.suf : r.suf;
+		ans.prf = l_c.seg.len() == l.val ? l.val + r.prf : l.prf;
+		ans.suf = r_c.seg.len() == r.val ? r.val + l.suf : r.suf;
 		ans.val = std::max({ ans.val, ans.prf, ans.suf, l.suf + r.prf });
 		return ans;
 	}
@@ -118,12 +118,12 @@ private:
 		auto& l_c = arr[l_i];
 		auto& r_c = arr[r_i];
 		me.val = std::max(l_c.val, r_c.val);
-		if (l_c.rng.len() == l_c.val && r_c.rng.len() == r_c.val) {
-			me.val = me.prf = me.suf = me.rng.len();
-		} else if (l_c.rng.len() == l_c.val) {
+		if (l_c.seg.len() == l_c.val && r_c.seg.len() == r_c.val) {
+			me.val = me.prf = me.suf = me.seg.len();
+		} else if (l_c.seg.len() == l_c.val) {
 			me.prf = l_c.val + r_c.prf;
 			me.suf = r_c.suf;
-		} else if (r_c.rng.len() == r_c.val) {
+		} else if (r_c.seg.len() == r_c.val) {
 			me.suf = r_c.val + l_c.suf;
 			me.prf = l_c.prf;
 		} else {

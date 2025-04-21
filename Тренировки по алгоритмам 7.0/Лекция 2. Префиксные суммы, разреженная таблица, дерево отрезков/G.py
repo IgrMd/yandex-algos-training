@@ -17,7 +17,7 @@ def read_input():
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
@@ -30,13 +30,13 @@ class Range:
 
 @dataclass
 class Item:
-    rng: Range
+    seg: Segment
     val: int | float = field(default=0)
     prf: int = field(default=0)
     suf: int = field(default=0)
 
     def __repr__(self):
-        return f'{self.rng}, v={self.val}, p={self.prf}, s={self.suf}]'
+        return f'{self.seg}, v={self.val}, p={self.prf}, s={self.suf}]'
 
 
 INF = float('inf')
@@ -56,14 +56,14 @@ class SegmentTree:
         for i in range(self.n - 1, -1, -1):
             initial_i = i - self.displacement
             if initial_i >= len(arr):
-                self.arr[i] = Item(Range(initial_i, initial_i))
+                self.arr[i] = Item(Segment(initial_i, initial_i))
             elif initial_i >= 0:
-                self.arr[i] = Item(Range(initial_i, initial_i))
+                self.arr[i] = Item(Segment(initial_i, initial_i))
                 if arr[initial_i] == 0:
                     self.arr[i].val = self.arr[i].prf = self.arr[i].suf = 1
             else:
                 l_i, r_i = self._get_children_(i)
-                self.arr[i] = Item(Range(self.arr[l_i].rng.l, self.arr[r_i].rng.r))
+                self.arr[i] = Item(Segment(self.arr[l_i].seg.l, self.arr[r_i].seg.r))
                 self._update_item_(i)
 
     def _update_item_(self, i: int):
@@ -71,12 +71,12 @@ class SegmentTree:
         l_i, r_i = self._get_children_(i)
         l_c, r_c = self.arr[l_i], self.arr[r_i]
         me.val = max(l_c.val, r_c.val)
-        if len(l_c.rng) == l_c.val and len(r_c.rng) == r_c.val:
-            me.val = me.prf = me.suf = len(me.rng)
-        elif len(l_c.rng) == l_c.val:
+        if len(l_c.seg) == l_c.val and len(r_c.seg) == r_c.val:
+            me.val = me.prf = me.suf = len(me.seg)
+        elif len(l_c.seg) == l_c.val:
             me.prf = l_c.val + r_c.prf
             me.suf = r_c.suf
-        elif len(r_c.rng) == r_c.val:
+        elif len(r_c.seg) == r_c.val:
             me.suf = r_c.val + l_c.suf
             me.prf = l_c.prf
         else:
@@ -102,26 +102,26 @@ class SegmentTree:
 
     def _query_impl_(self,
                      i: int,
-                     rng: Range):
+                     seg: Segment):
         if i >= self.n:
             return 0, 0, 0
         me = self.arr[i]
-        if rng.r < me.rng.l or rng.l > me.rng.r:  # ranges not crossed
+        if seg.r < me.seg.l or seg.l > me.seg.r:  # segments not crossed
             return 0, 0, 0
-        if rng.l <= me.rng.l and me.rng.r <= rng.r:  # me in request range
+        if seg.l <= me.seg.l and me.seg.r <= seg.r:  # me in request range
             return me.val, me.prf, me.suf
         l_i, r_i = self._get_children_(i)
         l_c, r_c = self.arr[l_i], self.arr[r_i]
-        l_val, l_prf, l_suf = self._query_impl_(l_i, rng)
-        r_val, r_prf, r_suf = self._query_impl_(r_i, rng)
+        l_val, l_prf, l_suf = self._query_impl_(l_i, seg)
+        r_val, r_prf, r_suf = self._query_impl_(r_i, seg)
         val = max(l_val, r_val)
-        prf = l_val + r_prf if len(l_c.rng) == l_val else l_prf
-        suf = r_val + l_suf if len(r_c.rng) == r_val else r_suf
+        prf = l_val + r_prf if len(l_c.seg) == l_val else l_prf
+        suf = r_val + l_suf if len(r_c.seg) == r_val else r_suf
         val = max(val, prf, suf, l_suf + r_prf)
         return val, prf, suf
 
-    def query(self, rng: Range):
-        return self._query_impl_(0, rng)[0]
+    def query(self, seg: Segment):
+        return self._query_impl_(0, seg)[0]
 
 
 def main():
@@ -132,8 +132,8 @@ def main():
     for _ in range(m):
         cmd, a, b = input().split()
         if cmd[0] == 'Q':
-            rng = Range(int(a) - 1, int(b) - 1)
-            print(tree.query(rng))
+            seg = Segment(int(a) - 1, int(b) - 1)
+            print(tree.query(seg))
         else:
             tree.update_item(int(a) - 1, int(b))
 

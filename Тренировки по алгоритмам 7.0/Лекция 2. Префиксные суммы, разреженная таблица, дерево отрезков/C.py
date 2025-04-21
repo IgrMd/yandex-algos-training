@@ -8,7 +8,7 @@ def read_input():
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
@@ -45,7 +45,7 @@ class SparceTable:
             prev_len = cur_seg_len
             cur_seg_len *= 2
 
-    def handle_request(self, request: Range):
+    def handle_request(self, request: Segment):
         req_len = request.r - request.l + 1
         pow_of_2 = self.pows2[req_len] - 1 if req_len > 1 else 0
         new_r = request.r - 2 ** pow_of_2 + 1
@@ -56,7 +56,7 @@ class SparceTable:
 def main():
     table = read_input()
     for _ in range(int(input().strip())):
-        request = Range(*map(int, input().split()))
+        request = Segment(*map(int, input().split()))
         request.l -= 1
         request.r -= 1
         ans = table.handle_request(request)

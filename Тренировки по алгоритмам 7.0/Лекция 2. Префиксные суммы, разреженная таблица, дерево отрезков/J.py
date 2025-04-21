@@ -9,7 +9,7 @@ P = 10 ** 9 + 7
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
@@ -25,15 +25,15 @@ INF = float('inf')
 
 @dataclass
 class Item:
-    rng: Range
+    seg: Segment
     val: int | float = field(default=0)
     prom: int = field(default=0)
 
     def len(self):
-        return len(self.rng)
+        return len(self.seg)
 
     def __repr__(self):
-        return f'{self.rng}, v={self.val}'
+        return f'{self.seg}, v={self.val}'
 
 
 class SegmentTree:
@@ -52,29 +52,29 @@ class SegmentTree:
         for i in range(self.n - 1, -1, -1):
             initial_i = i - self.displacement
             if initial_i >= 0:
-                self.arr[i] = Item(Range(initial_i, initial_i))
+                self.arr[i] = Item(Segment(initial_i, initial_i))
                 if initial_i < len(arr):
                     self.arr[i].val = arr[initial_i]
             else:
                 l_i, r_i = self._get_children_(i)
-                self.arr[i] = Item(Range(self.arr[l_i].rng.l, self.arr[r_i].rng.r))
+                self.arr[i] = Item(Segment(self.arr[l_i].seg.l, self.arr[r_i].seg.r))
                 self.arr[i].val = (self.arr[l_i].val * self.x[self.arr[l_i].len()] + self.arr[r_i].val) % P
         pass
 
-    def update_range(self, rng: Range, val: int):
-        self._update_range_(0, rng, val)
+    def update_range(self, seg: Segment, val: int):
+        self._update_range_(0, seg, val)
 
     def query(self,
               l: int,
               r: int,
               k: int):
-        hash1 = self._query_impl_(0, Range(l, l + k - 1))[0]
-        hash2 = self._query_impl_(0, Range(r, r + k - 1))[0]
+        hash1 = self._query_impl_(0, Segment(l, l + k - 1))[0]
+        hash2 = self._query_impl_(0, Segment(r, r + k - 1))[0]
         return hash1 == hash2
 
     def _touch_promise(self, i: int):
         me = self.arr[i]
-        if len(me.rng) > 1:
+        if len(me.seg) > 1:
             l_i, r_i = self._get_children_(i)
             l_c, r_c = self.arr[l_i], self.arr[r_i]
             l_c.val = r_c.val = (self.x_sum[r_c.len() - 1] * me.prom) % P
@@ -82,19 +82,19 @@ class SegmentTree:
             r_c.prom = me.prom
         me.prom = 0
 
-    def _update_range_(self, i: int, rng: Range, val: int):
+    def _update_range_(self, i: int, seg: Segment, val: int):
         me = self.arr[i]
-        if rng.r < me.rng.l or rng.l > me.rng.r:  # ranges not crossed
+        if seg.r < me.seg.l or seg.l > me.seg.r:  # segments not crossed
             return
-        if rng.l <= me.rng.l and me.rng.r <= rng.r:  # me in request range
+        if seg.l <= me.seg.l and me.seg.r <= seg.r:  # me in request range
             me.val = (self.x_sum[me.len() - 1] * val) % P
             me.prom = val
             return
         if me.prom > 0:
             self._touch_promise(i)
         l_i, r_i = self._get_children_(i)
-        self._update_range_(l_i, rng, val)
-        self._update_range_(r_i, rng, val)
+        self._update_range_(l_i, seg, val)
+        self._update_range_(r_i, seg, val)
         self.arr[i].val = (self.arr[l_i].val * self.x[self.arr[l_i].len()] + self.arr[r_i].val) % P
 
     @staticmethod
@@ -107,17 +107,17 @@ class SegmentTree:
 
     def _query_impl_(self,
                      i: int,
-                     rng: Range):
+                     seg: Segment):
         me = self.arr[i]
-        if rng.r < me.rng.l or rng.l > me.rng.r:  # ranges not crossed
+        if seg.r < me.seg.l or seg.l > me.seg.r:  # segments not crossed
             return 0, 0
-        if rng.l <= me.rng.l and me.rng.r <= rng.r:  # me in request range
+        if seg.l <= me.seg.l and me.seg.r <= seg.r:  # me in request range
             return me.val, me.len()
         if me.prom > 0:
             self._touch_promise(i)
         l_i, r_i = self._get_children_(i)
-        l_ans = self._query_impl_(l_i, rng)
-        r_ans = self._query_impl_(r_i, rng)
+        l_ans = self._query_impl_(l_i, seg)
+        r_ans = self._query_impl_(r_i, seg)
         h = (l_ans[0] * self.x[r_ans[1]] + r_ans[0]) % P
         return h, l_ans[1] + r_ans[1]
 
@@ -132,7 +132,7 @@ def main():
         l -= 1
         r -= 1
         if t == 0:
-            tree.update_range(Range(l, r), k)
+            tree.update_range(Segment(l, r), k)
         else:
             if tree.query(l, r, k):
                 print('+', end='')

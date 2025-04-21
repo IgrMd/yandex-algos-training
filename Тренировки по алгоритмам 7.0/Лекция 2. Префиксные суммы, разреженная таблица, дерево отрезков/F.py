@@ -13,14 +13,14 @@ def read_input():
 
 
 @dataclass
-class Range:
+class Segment:
     l: int
     r: int
 
 
 @dataclass
 class Item:
-    rng: Range
+    seg: Segment
     val: int | float
 
 
@@ -42,14 +42,14 @@ class SegmentTree:
         for i in range(self.n - 1, -1, -1):
             initial_i = i - self.displacement
             if initial_i >= len(arr):
-                self.arr[i] = Item(Range(initial_i, initial_i), -INF)
+                self.arr[i] = Item(Segment(initial_i, initial_i), -INF)
             elif initial_i >= 0:
-                self.arr[i] = Item(Range(initial_i, initial_i), arr[initial_i])
+                self.arr[i] = Item(Segment(initial_i, initial_i), arr[initial_i])
             else:
                 l_i, r_i = self._get_children_(i)
                 l_child, r_child = self.arr[l_i], self.arr[r_i]
-                rng = Range(l_child.rng.l, r_child.rng.r)
-                self.arr[i] = Item(rng, max(l_child.val, r_child.val))
+                seg = Segment(l_child.seg.l, r_child.seg.r)
+                self.arr[i] = Item(seg, max(l_child.val, r_child.val))
 
     @staticmethod
     def _get_children_(i: int):
@@ -66,13 +66,13 @@ class SegmentTree:
         me = self.arr[i]
         if me.val < x:
             return -1
-        if me.rng.r < start:
+        if me.seg.r < start:
             return -1
-        if me.rng.l == me.rng.r:
-            return me.rng.l
+        if me.seg.l == me.seg.r:
+            return me.seg.l
         l_i, r_i = self._get_children_(i)
         ans = -1
-        if self.arr[l_i].rng.r >= start:
+        if self.arr[l_i].seg.r >= start:
             ans = self._upper_bound_(l_i, start, x)
         if ans == -1:
             ans = self._upper_bound_(r_i, start, x)
