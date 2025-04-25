@@ -14,10 +14,10 @@ POW = 64
 
 
 def read_input():
-    n, k = map(int, input().split())
+    n, k = map(int, sys.stdin.readline().split())
     rooks = []
     for i in range(k):
-        x, y, z = map(int, input().split())
+        x, y, z = map(int, sys.stdin.readline().split())
         rooks.append(Point(x - 1, y - 1, z - 1))
     return n, rooks
 
@@ -42,10 +42,11 @@ def rooks_3d(n: int, rooks: list[Point]):
         pos = p.z % POW
         xz[p.x][chunk] &= ~(1 << pos)
         yz[p.y][chunk] &= ~(1 << pos)
+    chunk_total = len(xz[0])
     for x in range(n):
         for y in range(n):
             if xy[x][y]:
-                for chunk in range(n // POW + 1):
+                for chunk in range(chunk_total):
                     if xz[x][chunk] != 0 and yz[y][chunk] != 0:
                         for z in range(POW):
                             if xz[x][chunk] & (1 << z) and yz[y][chunk] & (1 << z):
