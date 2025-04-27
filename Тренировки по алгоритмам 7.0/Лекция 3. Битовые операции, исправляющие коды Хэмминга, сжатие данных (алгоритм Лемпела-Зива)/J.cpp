@@ -266,7 +266,7 @@ void LWZ() {
 			std::cin >> byte;
 			packed.at(i) = byte;
 		}
-		auto unpacked = a.Unpack(move(packed));
+		auto unpacked = a.Unpack(std::move(packed));
 		std::cout << unpacked << std::endl;
 	}
 }
