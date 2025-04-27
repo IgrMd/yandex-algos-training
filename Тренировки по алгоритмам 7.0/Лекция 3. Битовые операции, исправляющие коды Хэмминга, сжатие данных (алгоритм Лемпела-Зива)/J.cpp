@@ -158,7 +158,7 @@ auto LWZArhiver::Pack(const std::string& data) -> std::vector<unsigned char> {
 		Write(pos_width, 0);
 	}
 	Write(CHAR_WIDTH, TERM - DISPL);
-	return move(packed);
+	return std::move(packed);
 }
 
 auto LWZArhiver::Unpack(std::vector<unsigned char> data) -> std::string {
