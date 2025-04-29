@@ -1,7 +1,11 @@
 import sys
 
-EMPTY = 0xFFFF_FFFF
-POW = 64
+EMPTY = 0
+POW = 128
+
+for _ in range(POW):
+    EMPTY <<= 1
+    EMPTY += 1
 
 
 def rooks_3d():
