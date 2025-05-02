@@ -1,8 +1,3 @@
-import sys
-
-sys.setrecursionlimit(100000)
-
-
 def read_input():
     n, m = map(int, input().split())
     bridges = []
