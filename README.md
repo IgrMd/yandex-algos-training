@@ -258,3 +258,68 @@
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%205.0/Лекция%204.%20Бинарный%20поиск)
 
 </details>
+
+## [Тренировки по алгоритмам 6.0](https://yandex.ru/yaintern/training/algorithm-training-october-2024)
+
+<details>
+
+<summary></summary>
+
+### Темы лекций
+
+1. Тестирование
+    * [Лекция](https://youtube.com/live/c67zB3FWLOs)
+    * [Разбор домашнего задания](https://youtube.com/live/Gk5KrTA5hpQ?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/66792)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%206.0/Лекция%201.%20Тестирование)
+2. Префиксные суммы и два указателя
+    * [Лекция](https://youtube.com/live/B4uP6igiVNU?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/T3-4f5SZy3Y?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/66793)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%206.0/Лекция%202.%20Префиксные%20суммы%20и%20два%20указателя)
+3. Стеки, очереди, деки
+    * [Лекция](https://youtube.com/live/km0E_i8Dtso?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/Fg5uDgPZDoo?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/66794)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%206.0/Лекция%203.%20Стеки%2C%20очереди%2C%20деки)
+4. Деревья, представления и обходы
+    * [Лекция](https://youtube.com/live/O9ffppQ05-c?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/P6SqATvWYpY?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/66795)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%206.0/Лекция%204.%20Деревья%2C%20представления%20и%20обходы)
+
+</details>
+
+## [Тренировки по алгоритмам 7.0]()
+
+<details>
+
+<summary></summary>
+
+### Темы лекций
+
+0. Разминка
+    * [Домашнее задание](https://contest.yandex.ru/contest/74963/enter)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%207.0/Лекция%200.%20Разминка)
+1. Жадный алгоритм и задача о рюкзаке
+    * [Лекция](https://youtube.com/live/CgHXYmhTbSw?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/GMum2wuCl_w?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/74964/enter)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%207.0/Лекция%201.%20Жадный%20алгоритм%20и%20задача%20о%20рюкзаке)
+2. Префиксные суммы, разреженная таблица, дерево отрезков
+    * [Лекция](https://youtube.com/live/j-TMzZzQTAU?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/WXpX30Hi_Bg?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/74966/enter)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%207.0/Лекция%202.%20Префиксные%20суммы%2C%20разреженная%20таблица%2C%20дерево%20отрезков)
+3. Битовые операции, исправляющие коды Хэмминга, сжатие данных (алгоритм Лемпела-Зива)
+    * [Лекция](https://youtube.com/live/QV6vhMsZ8Q4?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/8XgdM0SU4p8?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/74967)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%207.0/Лекция%203.%20Битовые%20операции%2C%20исправляющие%20коды%20Хэмминга%2C%20сжатие%20данных%20(алгоритм%20Лемпела-Зива))
+4. Ссылочные типы данных, двусвязные списки, B‑деревья
+    * [Лекция](https://youtube.com/live/wzvhQY6W5AA?feature=share)
+    * [Разбор домашнего задания](https://youtube.com/live/q199p8knbBs?feature=share)
+    * [Домашнее задание](https://contest.yandex.ru/contest/74968)
+    * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%207.0/Лекция%204.%20Ссылочные%20типы%20данных%2C%20двусвязные%20списки%2C%20B‑деревья)
+
+</details>
