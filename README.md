@@ -290,7 +290,7 @@
 
 </details>
 
-## [Тренировки по алгоритмам 7.0]()
+## [Тренировки по алгоритмам 7.0](https://yandex.ru/yaintern/training/algorithm-training)
 
 <details>
 
