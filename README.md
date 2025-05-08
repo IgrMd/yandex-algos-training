@@ -2,6 +2,10 @@
 
 ## [Тренировки по алгоритмам 1.0](https://yandex.ru/yaintern/algorithm-training_1)
 
+<details>
+
+<summary></summary>
+
 ### Темы лекций
 
 1. Сложность, тестирование, особые случаи
@@ -45,7 +49,13 @@
     * [Домашнее задание](https://contest.yandex.ru/contest/28069/enter)
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%201.0/Лекция%208.%20«Деревья»)
 
+</details>
+
 ## [Тренировки по алгоритмам 2.0](https://yandex.ru/yaintern/algorithm-training_2#schedule)
+
+<details>
+
+<summary></summary>
 
 1. Домашнее задание № 1
     * Дивизион A
@@ -120,7 +130,13 @@
         * [Домашнее задание](https://contest.yandex.ru/contest/29403/enter/)
         * Решение
 
+</details>
+
 ## [Тренировки по алгоритмам 3.0](https://yandex.ru/yaintern/training/algorithm-training_3)
+
+<details>
+
+<summary></summary>
 
 [Домашнее задание Дивизион А](https://contest.yandex.ru/contest/45469)  
 [Домашнее задание Дивизион B](https://contest.yandex.ru/contest/45468)
@@ -168,7 +184,13 @@
 * [Задание](https://contest.yandex.ru/contest/46304)
 * [Решение Дивизион A, B](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%203.0/Финальный%20контест)
 
+</details>
+
 ## [Тренировки по алгоритмам 4.0](https://yandex.ru/yaintern/training/algorithm-training_4)
+
+<details>
+
+<summary></summary>
 
 ### Разминка
 
@@ -204,7 +226,13 @@
 * [Задание](https://contest.yandex.ru/contest/53033)
 * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%204.0/Финальный%20спринт%20—%20контест)
 
+</details>
+
 ## [Тренировки по алгоритмам 5.0](https://yandex.ru/yaintern/training/algorithm-training_5)
+
+<details>
+
+<summary></summary>
 
 ### Темы лекций
 
@@ -228,3 +256,5 @@
     * [Разбор домашнего задания](https://www.youtube.com/watch?v=H2qC2rFES-s)
     * [Домашнее задание](https://contest.yandex.ru/contest/59542)
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%205.0/Лекция%204.%20Бинарный%20поиск)
+
+</details>
