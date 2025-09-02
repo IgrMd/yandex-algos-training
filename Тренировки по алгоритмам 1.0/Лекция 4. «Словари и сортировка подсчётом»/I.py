@@ -18,13 +18,15 @@ def wrong_stresses(n, dictionary, homework):
         if word.lower() in dictionary_lower:
             errors += 1
             continue
-        capitals_count = 0
+        capitals_met = False
         for c in word:
             if c in capitals:
-                capitals_count += 1
-            if capitals_count > 1:
-                break
-        if capitals_count != 1:
+                if capitals_met:
+                    errors += 1
+                    break
+                else:
+                    capitals_met = True
+        if not capitals_met:
             errors += 1
     return errors
 
