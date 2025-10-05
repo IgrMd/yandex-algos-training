@@ -8,12 +8,10 @@ def new_rules(x, y, f, g):
     dx = abs(x - f)
     dy = abs(y - g)
     ans = 0
-    dx_left = max(0, dx - 1)
-    ans += dx_left * 3
+    ans += max(0, dx - 1) * 3
+    ans += max(0, dy - 1) * 3
     if dx > 0 and dy > 0:
         ans += 1
-    dy_left = max(0, dy - 1)
-    ans += dy_left * 3
     return ans
 
 
