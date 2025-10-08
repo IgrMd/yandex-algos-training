@@ -132,3 +132,4 @@ dmypy.json
 test*
 input*
 output*
+.test*
