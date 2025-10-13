@@ -1,6 +1,6 @@
 import sys
 
-sys.setrecursionlimit(1000001)
+sys.setrecursionlimit(10 ** 7)
 
 
 def read_input():
@@ -12,6 +12,11 @@ def read_input():
 def chain_in_table(n, m, table: list[list]):
     dp = [[-1] * m for _ in range(n)]
     diffs = [(-1, 0), (0, -1), (1, 0), (0, 1)]
+    records = []
+    for row in range(n):
+        for col in range(m):
+            records.append((table[row][col], row, col))
+    records.sort()
 
     def helper(i2, j2):
         dp[i2][j2] = 1
@@ -29,23 +34,22 @@ def chain_in_table(n, m, table: list[list]):
                     dp[i2][j2] = max(dp[i2][j2], dp[adj_i2][adj_j2] + 1)
         return dp[i2][j2]
 
-    for i in range(n):
-        for j in range(m):
-            curr = table[i][j]
-            if dp[i][j] != -1:
+    for val, i, j in records:
+        curr = table[i][j]
+        if dp[i][j] != -1:
+            continue
+        dp[i][j] = 1
+        for di, dj in diffs:
+            adj_i = i + di
+            adj_j = j + dj
+            if adj_i == n or adj_i < 0 or adj_j == m or adj_j < 0:
                 continue
-            dp[i][j] = 1
-            for di, dj in diffs:
-                adj_i = i + di
-                adj_j = j + dj
-                if adj_i == n or adj_i < 0 or adj_j == m or adj_j < 0:
-                    continue
-                adj = table[adj_i][adj_j]
-                if curr - adj == 1:
-                    if dp[adj_i][adj_j] == -1:
-                        dp[i][j] = max(dp[i][j], helper(adj_i, adj_j) + 1)
-                    else:
-                        dp[i][j] = max(dp[i][j], dp[adj_i][adj_j] + 1)
+            adj = table[adj_i][adj_j]
+            if curr - adj == 1:
+                if dp[adj_i][adj_j] == -1:
+                    dp[i][j] = max(dp[i][j], helper(adj_i, adj_j) + 1)
+                else:
+                    dp[i][j] = max(dp[i][j], dp[adj_i][adj_j] + 1)
 
     ans = 0
     for i in range(n):
