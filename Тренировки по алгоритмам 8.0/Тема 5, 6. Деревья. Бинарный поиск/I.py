@@ -38,14 +38,13 @@ class Node:
         self.right = Var(right) if isinstance(right, str) else right
         self.op = op
         self.is_var = False
-        self._h = self._w = self._mid = None
+        self._h = self._w = None
 
     def _traverse_(self):
         hl, wl = self.left.h(), self.left.w()
         hr, wr = self.right.h(), self.right.w()
         self._h = max(hl, hr) + 2
         self._w = wl + wr + 5
-        self._mid = wl + 3
 
     def h(self):
         if self._h is None:
@@ -56,11 +55,6 @@ class Node:
         if self._w is None:
             self._traverse_()
         return self._w
-
-    def mid(self):
-        if self._mid is None:
-            self._traverse_()
-        return self._mid
 
     def __repr__(self):
         return f'{self.left}{self.op}{self.right}'
