@@ -31,8 +31,7 @@ def interview_schedule(n: int, a: list[int], b: list[int]):
         while j < n and i < n:
             b_extra = b[j]
             while b_extra and i < n and i - j <= k:
-                r = min(n - 1, i + k)
-                if j > r:
+                if j > i + k:
                     return False
                 if b_extra < a_extra:
                     a_extra -= b_extra
@@ -64,7 +63,7 @@ def test():
 def main():
     # test()
     # start = datetime.datetime.now()
-    # sys.stdin = open('input2.txt', 'r')
+    # sys.stdin = open('input.txt', 'r')
     print(interview_schedule(*read_input()))
     # print(datetime.datetime.now() - start)
 
