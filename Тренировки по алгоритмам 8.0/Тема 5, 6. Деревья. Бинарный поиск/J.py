@@ -1,3 +1,5 @@
+import datetime
+import sys
 from collections import deque
 
 
@@ -23,28 +25,25 @@ def interview_schedule(n: int, a: list[int], b: list[int]):
         return -1
 
     def cmp(k):
-        queue = deque()
         i = 0
-        for j in range(n):
-            while i < n and i - j < k + 1:
-                queue.append((i, a[i]))
-                i += 1
-            extra = b[j]
-            while extra and queue:
-                it, count = queue.popleft()
-                r, l = min(n - 1, it + k), max(0, it - k)
+        j = 0
+        a_extra = a[i]
+        while j < n and i < n:
+            b_extra = b[j]
+            while b_extra and i < n and i - j <= k:
+                r = min(n - 1, i + k)
                 if j > r:
                     return False
-                if l > j:
-                    queue.appendleft((it, count))
-                    break
-                if extra < count:
-                    count -= extra
-                    queue.appendleft((it, count))
-                    extra = 0
+                if b_extra < a_extra:
+                    a_extra -= b_extra
+                    b_extra = 0
                 else:
-                    extra -= count
-        return False if queue else True
+                    b_extra -= a_extra
+                    i += 1
+                    if i < n:
+                        a_extra = a[i]
+            j += 1
+        return i == n
 
     k = bin_search(0, n, cmp)
     return k
@@ -64,7 +63,10 @@ def test():
 
 def main():
     # test()
+    # start = datetime.datetime.now()
+    # sys.stdin = open('input2.txt', 'r')
     print(interview_schedule(*read_input()))
+    # print(datetime.datetime.now() - start)
 
 
 if __name__ == '__main__':
