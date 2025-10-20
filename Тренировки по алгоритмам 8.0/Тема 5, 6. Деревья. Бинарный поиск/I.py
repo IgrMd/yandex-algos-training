@@ -39,24 +39,19 @@ class Node:
         self.op = op
         self._h = self._w = None
 
-    def _traverse_(self):
+    def precompute(self):
+        self.left.precompute()
         hl, wl = self.left.h(), self.left.w()
+        self.right.precompute()
         hr, wr = self.right.h(), self.right.w()
         self._h = max(hl, hr) + 2
         self._w = wl + wr + 5
 
     def h(self):
-        if self._h is None:
-            self._traverse_()
         return self._h
 
     def w(self):
-        if self._w is None:
-            self._traverse_()
         return self._w
-
-    def __repr__(self):
-        return f'{self.left}{self.op}{self.right}'
 
     def print(self, field, level=0, start=0):
         row = field[level * 2]
@@ -78,14 +73,14 @@ class Var:
     def __init__(self, val):
         self.val = val
 
-    def __repr__(self):
-        return str(self.val)
-
     def h(self):
         return 1
 
     def w(self):
         return 1
+
+    def precompute(self):
+        pass
 
     def print(self, field, level=0, start=0):
         row = field[level * 2]
@@ -109,6 +104,7 @@ def syntax_tree(s: str):
             stack.append(Node(left, right, c))
     assert len(stack) == 1
     root = stack[0]
+    root.precompute()
     field = [[' '] * root.w() for i in range(root.h())]
     root.print(field)
     for r in field:
