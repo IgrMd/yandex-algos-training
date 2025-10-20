@@ -23,13 +23,13 @@ def superstring_gravity(n: int, a: list[int], m: int, b: list[int]):
         prev = prefs[-1]
         prefs.append((prev[BJJ] + bj * j, prev[BJ] + bj, prev[J] + j))
     ans = 0
-    bjj_l, bj_l, j_l = prefs[-1]
+    bjj_r, bj_r, j_r = prefs[-1]
     for i, ai in enumerate(a, 1):
         j = bisect_left(a=b_sorted, x=ai, lo=0, hi=len(b_sorted), key=lambda x: x[0])
         count_lt = j
         count_ge = m - j
         sum1 = count_lt * ai * i - i * prefs[j][BJ] - ai * prefs[j][J] + prefs[j][BJJ]
-        sum2 = -count_ge * ai * i + i * (bj_l - prefs[j][BJ]) + ai * (j_l - prefs[j][J]) - (bjj_l - prefs[j][BJJ])
+        sum2 = -count_ge * ai * i + i * (bj_r - prefs[j][BJ]) + ai * (j_r - prefs[j][J]) - (bjj_r - prefs[j][BJJ])
         ans += sum1 + sum2
     return ans
 
