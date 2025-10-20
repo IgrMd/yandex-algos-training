@@ -37,7 +37,6 @@ class Node:
         self.left = Var(left) if isinstance(left, str) else left
         self.right = Var(right) if isinstance(right, str) else right
         self.op = op
-        self.is_var = False
         self._h = self._w = None
 
     def _traverse_(self):
@@ -78,7 +77,6 @@ class Node:
 class Var:
     def __init__(self, val):
         self.val = val
-        self.is_var = True
 
     def __repr__(self):
         return str(self.val)
