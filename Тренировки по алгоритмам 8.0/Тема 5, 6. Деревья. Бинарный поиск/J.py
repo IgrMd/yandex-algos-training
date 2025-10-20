@@ -1,6 +1,5 @@
 import datetime
 import sys
-from collections import deque
 
 
 def read_input():
@@ -10,42 +9,38 @@ def read_input():
     return n, a, b
 
 
-def bin_search(left: int, right: int, cmp):
-    while left < right:
-        mid = (left + right) // 2
-        if cmp(mid):
-            right = mid
-        else:
-            left = mid + 1
-    return left
-
-
 def interview_schedule(n: int, a: list[int], b: list[int]):
     if sum(b) < sum(a):
         return -1
 
-    def cmp(k):
-        i = 0
-        j = 0
-        a_extra = a[i]
-        while j < n and i < n:
-            b_extra = b[j]
-            while b_extra and i < n and i - j <= k:
-                if j > i + k:
-                    return False
-                if b_extra < a_extra:
-                    a_extra -= b_extra
-                    b_extra = 0
-                else:
-                    b_extra -= a_extra
-                    i += 1
-                    if i < n:
-                        a_extra = a[i]
-            j += 1
-        return i == n
+    left, right = 0, n
+    while left < right:
+        k = (left + right) // 2
 
-    k = bin_search(0, n, cmp)
-    return k
+        def cmp():
+            i = 0
+            a_extra = a[0]
+            for j in range(n):
+                b_extra = b[j]
+                while b_extra and i - j <= k:
+                    if j > i + k:
+                        return False
+                    if b_extra < a_extra:
+                        a_extra -= b_extra
+                        b_extra = 0
+                    else:
+                        b_extra -= a_extra
+                        i += 1
+                        if i == n:
+                            return True
+                        a_extra = a[i]
+            return False
+
+        if cmp():
+            right = k
+        else:
+            left = k + 1
+    return left
 
 
 def test():
