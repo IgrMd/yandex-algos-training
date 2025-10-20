@@ -59,6 +59,21 @@ class Node:
     def __repr__(self):
         return f'{self.left}{self.op}{self.right}'
 
+    def print(self, field, level=0, start=0):
+        row = field[level * 2]
+        l = self.left.print(field, level + 1, start)
+        r = self.right.print(field, level + 1, start + self.left.w() + 5)
+        for i in range(l, r):
+            row[i] = '-'
+        row[l] = row[r] = '.'
+        me = start + self.left.w() + 2
+        row[me - 1] = '['
+        row[me + 1] = ']'
+        row[me] = self.op
+        if level > 0:
+            field[level * 2 - 1][me] = '|'
+        return me
+
 
 class Var:
     def __init__(self, val):
@@ -73,6 +88,13 @@ class Var:
 
     def w(self):
         return 1
+
+    def print(self, field, level=0, start=0):
+        row = field[level * 2]
+        row[start] = self.val
+        if level > 0:
+            field[level * 2 - 1][start] = '|'
+        return start
 
 
 def syntax_tree(s: str):
@@ -90,32 +112,9 @@ def syntax_tree(s: str):
     assert len(stack) == 1
     root = stack[0]
     field = [[' '] * root.w() for i in range(root.h())]
-
-    def print_node(curr,
-                   level,
-                   start):
-        row = field[level * 2]
-        if curr.is_var:
-            row[start] = curr.val
-            if level > 0:
-                field[level * 2 - 1][start] = '|'
-            return start
-        l = print_node(curr.left, level + 1, start)
-        r = print_node(curr.right, level + 1, start + curr.left.w() + 5)
-        for i in range(l, r):
-            row[i] = '-'
-        row[l] = row[r] = '.'
-        me = start + curr.left.w() + 2
-        row[me - 1] = '['
-        row[me + 1] = ']'
-        row[me] = curr.op
-        if level > 0:
-            field[level * 2 - 1][me] = '|'
-        return me
-
-    print_node(root, 0, 0)
+    root.print(field)
     for r in field:
-        print(*r, sep='')
+        print(''.join(r))
 
 
 if __name__ == '__main__':
