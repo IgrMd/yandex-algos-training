@@ -50,7 +50,7 @@ def test():
         a = [random.randint(1, n_max) for _ in range(n)]
         b = [random.randint(1, n_max) for _ in range(m)]
         ans1 = superstring_gravity(n, a, m, b)
-        ans2 = superstring_gravity(n, a, m, b)
+        ans2 = superstring_gravity_naive(n, a, m, b)
         if ans1 != ans2:
             print(f'{ans1} != {ans2}')
             print(n)
