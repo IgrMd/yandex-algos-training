@@ -290,7 +290,7 @@
 
 </details>
 
-## [Тренировки по алгоритмам 7.0](https://yandex.ru/yaintern/training/algorithm-training)
+## [Тренировки по алгоритмам 7.0](https://yandex.ru/yaintern/training/algorithm-training-march-2025)
 
 <details>
 
@@ -321,5 +321,16 @@
     * [Разбор домашнего задания](https://youtube.com/live/q199p8knbBs?feature=share)
     * [Домашнее задание](https://contest.yandex.ru/contest/74968)
     * [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%207.0/Лекция%204.%20Ссылочные%20типы%20данных%2C%20двусвязные%20списки%2C%20B‑деревья)
+
+</details>
+
+
+## [Тренировки по алгоритмам 8.0](https://yandex.ru/yaintern/training/algorithm-training)
+
+<details>
+
+<summary></summary>
+
+### Темы лекций
 
 </details>
