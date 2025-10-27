@@ -4,7 +4,7 @@ WALL = 1
 FINISH = 2
 
 
-def motorsport(n: int, l: int, w: int, cars: list[tuple[int]]):
+def motorsport(n: int, l: int, w: int, cars: list[tuple[int, int, int, int]]):
     events = []
     for i, (x, y, vx, vy) in enumerate(cars):
         if vx > 0:
