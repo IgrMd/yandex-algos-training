@@ -324,7 +324,6 @@
 
 </details>
 
-
 ## [Тренировки по алгоритмам 8.0](https://yandex.ru/yaintern/training/algorithm-training)
 
 <details>
@@ -332,5 +331,37 @@
 <summary></summary>
 
 ### Темы лекций
+
+#### Тема 1, 2: Тестирование и особые случаи. Множества и словари
+
+* [Тестирование](https://youtube.com/live/c67zB3FWLOs)
+* [Множества и словари](https://youtube.com/live/jQOnYzW8ZOE)
+* [Разбор домашнего задания](https://youtube.com/live/KJJCcO1ew00)
+* [Домашнее задание](https://contest.yandex.ru/contest/80939/enter)
+* [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%208.0/Тема%201%2C%202.%20Тестирование%20и%20особые%20случаи.%20Множества%20и%20словари)
+
+#### Тема 3, 4: Одномерное динамическое программирование. Двумерное динамическое программирование
+
+* [Одномерное динамическое программирование](https://www.youtube.com/watch?v=H7lu6h8H9-4)
+* [Двумерное динамическое программирование](https://www.youtube.com/live/U8gzm92fprI)
+* [Разбор домашнего задания](https://youtube.com/live/5-OCip9WPg4)
+* [Домашнее задание](https://contest.yandex.ru/contest/80940/enter)
+* [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%208.0/Тема%203%2C%204.%20Одномерное%20динамическое%20программирование.%20Двумерное%20динамическое%20программирование)
+
+#### Тема 5, 6: Деревья. Бинарный поиск
+
+* [Деревья](https://youtube.com/live/O9ffppQ05-c)
+* [Бинарный поиск](https://youtube.com/live/-B6xvDeGyPg)
+* [Разбор домашнего задания](https://youtube.com/live/TU8eEWYqgdc)
+* [Домашнее задание](https://contest.yandex.ru/contest/80941/enter)
+* [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%208.0/Тема%205%2C%206.%20Деревья.%20Бинарный%20поиск)
+
+#### Тема 7, 8: Префиксные суммы и два указателя. Сортировка событий
+
+* [Префиксные суммы и два указателя](https://youtube.com/live/B4uP6igiVNU)
+* [Сортировка событий](https://www.youtube.com/watch?v=hGixDBO-p6Q)
+* [Разбор домашнего задания](https://youtube.com/live/TKkrXVI-2hs)
+* [Домашнее задание](https://contest.yandex.ru/contest/80942/enter)
+* [Решение](https://github.com/IgrMd/yandex-algos-training/tree/main/Тренировки%20по%20алгоритмам%208.0/Тема%207%2C%208.%20Префиксные%20суммы%20и%20два%20указателя.%20Сортировка%20событий)
 
 </details>
